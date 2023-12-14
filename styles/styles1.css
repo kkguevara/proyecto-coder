@@ -14,7 +14,7 @@ img {
   max-width: 100%; /* ancho maximo para que no se escape del limite de su contenedor, se ajusta al elemento padre, en este caso es el body   */
 }
 
-/* ESTRUCTURA DE MI HEADER */
+/* ESTRUCTURA DE MI HEADER (CON FLEX)*/
 
 header {
   background-color: black;
@@ -38,7 +38,6 @@ header nav ul {
   gap: 3rem;
   font-size: 1rem;
 }
-
 header img {
   height: 180px;
   width: 200px;
@@ -55,12 +54,12 @@ header .icono-img {
   gap: 20rem;
   font-size: 2em;
 }
-/* ESTRUCTURA DE MI FOOTER */
+/*--> ESTRUCTURA DE MI FOOTER (CON FLEX)<-- */
 
 footer {
   background-color: black;
   color: white;
-  padding: 1rem;
+  padding: 3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -70,4 +69,87 @@ footer img {
   height: 180px;
   width: 200px;
   border-radius: 10px;
+}
+footer a {
+  color: white;
+  border-radius: 30px;
+  padding: 4px 10px;
+}
+
+.obtener-descuento {
+  background-color: rgba(186, 85, 211, 0.37);
+  padding: 50px;
+  font-size: 2rem;
+}
+
+.obtener-descuento input {
+  width: 30%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background-position: right;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.obtener-descuento p {
+  font-size: 2rem;
+  color: #000305;
+}
+
+/*--> ESTRUCTURA DE MI INDEX (INICIO)<-- */
+
+/* VIDEO DEL INCIO */
+
+.video-inicio {
+  display: flex;
+  justify-content: center;
+}
+
+/*  LO MAS VENDIDO (CON GRIDS)*/
+
+.lo-mas-vendido {
+  display: grid;
+  border: 5px solid rgb(236, 236, 236);
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 50% 50%;
+}
+
+.lo-mas-vendido-1 {
+  border: 1px solid black;
+}
+
+/*  LO MAS RECOMENDADO PARA TI (CON GRIDS)*/
+
+.lo-mas-recomendado {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 50% 50%;
+}
+
+.lo-mas-recomendado-1 {
+  border: 1px solid black;
+}
+
+.img-promo {
+  display: flex;
+  position: relative;
+}
+
+.img-promo img {
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-promo p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.623);
+  padding: 5px;
+  text-align: center;
+  font-size: 4rem;
+  margin: 0;
 }
