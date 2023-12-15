@@ -97,7 +97,7 @@ footer a {
   color: #000305;
 }
 
-/*--> ESTRUCTURA DE MI INDEX (INICIO)<-- */
+/*--> ESTRUCTURA DEL INDEX (INICIO)<-- */
 
 /* VIDEO DEL INCIO */
 
@@ -106,25 +106,28 @@ footer a {
   justify-content: center;
 }
 
-/*  LO MAS VENDIDO (CON GRIDS)*/
+/*LO MAS VENDIDO (CON GRIDS)*/
 
 .lo-mas-vendido {
   display: grid;
-  border: 5px solid rgb(236, 236, 236);
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 50% 50%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
 .lo-mas-vendido-1 {
   border: 1px solid black;
 }
 
-/*  LO MAS RECOMENDADO PARA TI (CON GRIDS)*/
+/*LO MAS RECOMENDADO PARA TI (CON GRIDS)*/
 
 .lo-mas-recomendado {
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 50% 50%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
 .lo-mas-recomendado-1 {
@@ -152,4 +155,53 @@ footer a {
   text-align: center;
   font-size: 4rem;
   margin: 0;
+}
+/*--> ESTRUCTURA DE TIENDA HTLML (CON GRIDS)<-- */
+
+.mi-tienda {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.mi-tienda-1 {
+  border: 1px solid black;
+}
+
+/*--> ESTRUCTURA DE CATEGORIA HTML (CON GRIDS)<-- */
+
+/* MUJER */
+.categoria-mujer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.categoria-mujer-1 {
+  border: 1px solid black;
+}
+/* HOMBRE */
+.categoria-hombre {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.categoria-hombre-1 {
+  border: 1px solid black;
+}
+/* NINOS */
+.categoria-ninos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.categoria-ninos-1 {
+  border: 1px solid black;
 }
