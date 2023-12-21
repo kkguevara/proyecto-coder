@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*font-family: "Arial", sans-serif;*/
+}
+
+a {
+  text-decoration: none;
+  /* quito la decoración de texto de mi etiqueta a*/
+}
+
+ul,
+ol {
+  list-style: none;
+  /* quito la decoración de los vinetes en mis listas */
+}
+
+img {
+  max-width: 100%;
+  /* ancho maximo para que no se escape del limite de su contenedor, se ajusta al elemento padre, en este caso es el body   */
+}
+
+h2 {
+  margin-left: 10px;
+}
+
+/* ESTRUCTURA DE MI HEADER (CON FLEX)*/
+
+header {
+  background-color: black;
+
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header a {
+  color: white;
+  border-radius: 10px;
+  padding: 4px 10px;
+}
+
+header a:hover {
+  background-color: rgb(58, 130, 212);
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+}
+
+header nav ul {
+  display: flex;
+  gap: 3rem;
+  font-size: 1rem;
+}
+
+header img {
+  height: 180px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+header input {
+  width: 300px;
+  padding: 3px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+header .icono-img i {
+  width: 500px;
+}
+
+/*--> ESTRUCTURA DE MI FOOTER (CON FLEX)<-- */
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer img {
+  height: 180px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+footer a {
+  color: white;
+  border-radius: 30px;
+  padding: 4px 10px;
+}
+
+.obtener-descuento {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  padding: 50px;
+  background-color: rgb(58, 130, 212);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.obtener-descuento input [type="text"] {
+  width: 30%;
+  padding: 20px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background-position: right;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.obtener-descuento input[type="submit"] {
+  background-color: rgba(128, 128, 128, 0.747);
+  color: white;
+  cursor: pointer;
+  width: 100px;
+}
+
+.obtener-descuento input[type="submit"]:hover {
+  background-color: #000000;
+}
+
+/*--> ESTRUCTURA DEL INDEX (INICIO)<-- */
+
+/* VIDEO DEL INCIO */
+
+.video-inicio {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-color: #d3d3d3;
+  place-items: center;
+}
+/*LO MAS VENDIDO (CON GRIDS)*/
+
+.lo-mas-vendido {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 24px;
+}
+
+.lo-mas-vendido-1 {
+  border: 1px solid black;
+  background-color: #c0c0c050;
+  background-position: center;
+  background-size: cover;
+  justify-content: space-evenly;
+}
+
+/*LO MAS RECOMENDADO PARA TI (CON GRIDS)*/
+
+.lo-mas-recomendado {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 24px;
+}
+
+.lo-mas-recomendado-1 {
+  border: 1px solid black;
+  background-color: #c0c0c050;
+  background-position: center;
+  background-size: cover;
+  justify-content: space-evenly;
+}
+
+.img-promo {
+  display: flex;
+  position: relative;
+}
+
+.img-promo img {
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-promo p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.623);
+  padding: 5px;
+  text-align: center;
+  font-size: 4rem;
+  margin: 0;
+}
+
+/*--> ESTRUCTURA DE TIENDA HTLML (CON GRIDS)<-- */
+
+.mi-tienda {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 24px;
+}
+
+.mi-tienda-1 {
+  border: 1px solid black;
+  background-color: #c0c0c050;
+  background-position: center;
+  justify-content: space-evenly;
+}
+.filtro {
+  padding: 24px;
+}
+
+/*--> ESTRUCTURA DE CATEGORIA HTML (CON GRIDS)<-- */
+
+/* MUJER */
+
+.categoria-mujer-img {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+  padding-bottom: 5px;
+  object-fit: cover;
+}
+
+.categoria-mujer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 24px;
+}
+
+.categoria-mujer-1 {
+  border: 1px solid black;
+  background-color: #c0c0c050;
+  background-position: center;
+  background-size: cover;
+  justify-content: space-evenly;
+}
+
+/* HOMBRE */
+
+.categoria-hombre-img {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+  padding-bottom: 5px;
+  object-fit: cover;
+}
+
+.categoria-hombre {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 24px;
+}
+
+.categoria-hombre-1 {
+  border: 1px solid black;
+  background-color: #c0c0c050;
+  background-position: center;
+  background-size: cover;
+  justify-content: space-evenly;
+}
+
+/* NINOS */
+
+.categoria-ninos-img {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+  padding-bottom: 5px;
+  object-fit: cover;
+}
+
+.categoria-ninos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 24px;
+}
+
+.categoria-ninos-1 {
+  border: 1px solid black;
+  background-color: #c0c0c050;
+  background-position: center;
+  background-size: cover;
+  justify-content: space-evenly;
+}
+.categoria-titulo h2 {
+  color: black;
+  padding: 24px;
+}
+
+/*--> ESTRUCTURA DE REGISTRO HTML (CON GRIDS)<-- */
+
+.registro-inicio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 50px;
+  justify-content: center;
+}
+
+.registro-inicio article {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.registro-inicio form {
+  display: grid;
+  gap: 30px;
+  width: 500px;
+  text-align: center;
+}
+
+.registro-inicio input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.registro-inicio input[type="submit"]:hover {
+  background-color: rgba(128, 128, 128, 0.692);
+  color: rgb(8, 8, 8);
+  width: 120px;
+  cursor: pointer;
+}
+
+.registro-inicio a {
+  color: blue;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.registro-inicio h2 {
+  margin: 20px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+/*--> ESTRUCTURA DE CONTACTO HTML (CON GRIDS)<-- */
+
+.contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.contacto article {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contacto form {
+  display: grid;
+  gap: 30px;
+  width: 500px;
+  text-align: center;
+}
+
+.contacto input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contacto input[type="submit"]:hover {
+  background-color: rgba(128, 128, 128, 0.692);
+  color: rgb(8, 8, 8);
+  width: 120px;
+  cursor: pointer;
+}
+
+.contacto h2 {
+  margin: 20px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.contacto p {
+  font-size: 1rem;
+  color: #000000;
+  text-align: center;
+}
+
+/* ----MEDIA QUERIES INDEX HTML MOBILE */
+
+@media (min-width: 350px) and (max-width: 420px) {
+  header {
+    padding: 0;
+    display: block;
+  }
+
+  header img {
+    width: 100px;
+    height: 80px;
+  }
+
+  .video-inicio div video {
+    display: flex;
+    width: 100%;
+  }
+
+  .lo-mas-vendido {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .img-promo p {
+    font-size: 1rem;
+  }
+
+  .lo-mas-recomendado {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .obtener-descuento {
+    display: grid;
+    align-content: space-between;
+    grid-template-columns: 1fr;
+  }
+
+  .obtener-descuento p {
+    padding: 1rem;
+  }
+
+  footer {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px 30px;
+  }
+
+  /*MEDIA QUERIES TIENDA HTML MOBILE */
+
+  .mi-tienda {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* MEDIA QUERIES INDEX HTML DESKTOP */
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  header {
+    padding: 0;
+  }
+
+  header img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navbar-nav li {
+    margin: 0 !important;
+  }
+
+  .navbar-brand {
+    margin-right: 0;
+  }
+
+  video {
+    width: 100%;
+  }
+}
