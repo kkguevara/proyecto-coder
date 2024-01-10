@@ -1,0 +1,117 @@
+//variables
+
+$primary-color: black;
+$tipografia: "Arial", sans-serif;
+$color-texto1: black;
+$color-texto2: white;
+$border: 10px;
+$t-fuente: 1rem; //tamano fuente
+$espacio-foto: 24px; //padding fotos
+
+//reseteo
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $tipografia;
+
+  a {
+    text-decoration: none;
+    /* quito la decoración de texto de mi etiqueta a*/
+  }
+
+  ul,
+  li {
+    list-style: none;
+    /* quito la decoración de los vinetes en mis listas */
+  }
+}
+
+// extends - template
+
+%categoria {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: $espacio-foto;
+}
+
+%diseno-card {
+  border: 1px solid black;
+  background-color: #c0c0c050;
+  background-position: center;
+  background-size: cover;
+  justify-content: space-evenly;
+}
+
+%img-categoria {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+  padding-bottom: 5px;
+  object-fit: cover;
+
+}
+
+//mixins
+
+@mixin flex($argumento-1, $argumento-2, $argumento-3) {
+  display: flex;
+  flex-direction: $argumento-1 ;
+  justify-content: $argumento-2 ;
+  align-items: $argumento-3 ;
+
+}
+@mixin grid($argumento-1, $argumento-2, $argumento-3, ) {
+  display: grid;
+  grid-template-columns: $argumento-1;
+  gap: $argumento-2;
+  justify-content: $argumento-3;
+}
+@mixin img-logo {
+  height: 150px;
+  width: 150px;
+}
+
+@mixin margin-registro-contacto {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@mixin formulario {
+  display: grid;
+  gap: 10px;
+  
+  width: 500px; 
+}
+
+@mixin input-formulario {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 0.5px solid #0000003d;
+  border-radius: 4px;
+  font-size: 1rem;
+  place-items: center
+}
+
+@mixin input-submit {
+  background-color: rgba(128, 128, 128, 0.979);
+  color: $color-texto1;
+  cursor: pointer;
+  width: 120px;
+  place-items: center
+  
+}
+@mixin hover{
+  background-color:rgba(128, 128, 128, 0.212);
+  cursor: pointer;
+}
+@mixin h2{
+  margin: 20px;
+  text-align: center;
+  font-size: 2rem; 
+  font-weight: 600; 
+}

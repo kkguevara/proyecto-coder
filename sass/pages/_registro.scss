@@ -1,0 +1,30 @@
+.registro-inicio {
+    @include grid(repeat(2, 1fr), 30px 30px, center);
+
+    article {
+        @include margin-registro-contacto;
+    }
+
+    & h2 {
+        @include h2
+    }
+    
+    form {
+        @include formulario;
+
+        input {
+            @include input-formulario
+        }
+
+        input[type="submit"] {
+            @include input-submit;
+
+            &:hover {
+                @include hover
+            }
+
+        }
+
+    }
+
+}

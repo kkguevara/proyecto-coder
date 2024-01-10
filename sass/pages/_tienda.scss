@@ -1,0 +1,12 @@
+.mi-tienda {
+  @extend %categoria;
+  grid-template-rows: repeat(7, 1fr);
+
+  &-1 {
+    @extend%diseno-card
+  }
+
+  &-filtro {
+    padding: $espacio-foto;
+  }
+}

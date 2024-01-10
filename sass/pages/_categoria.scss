@@ -1,0 +1,39 @@
+.categoria-mujer {
+  @extend%categoria;
+
+  &-1 {
+    @extend%diseno-card;
+  }
+
+  &-img {
+    @extend%img-categoria;
+  }
+
+}
+
+.categoria-hombre {
+  @extend%categoria;
+
+  &-1 {
+    @extend%diseno-card;
+  }
+
+  &-img {
+    @extend%img-categoria
+  }
+
+}
+
+.categoria-ninos {
+  @extend%categoria;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  &-1 {
+    @extend%diseno-card;
+  }
+
+  &-img {
+    @extend%img-categoria;
+  }
+}
