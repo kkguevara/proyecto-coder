@@ -1,30 +1,43 @@
 .registro-inicio {
-    @include grid(repeat(2, 1fr), 30px 30px, center);
+  @include responsive-tlf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    article {
-        @include margin-registro-contacto;
+    article form {
+      width: 100%;
+    }
+  }
+
+  @include responsive-tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @include grid(repeat(2, 1fr), 30px 30px, center);
+
+  article {
+    @include margin-registro-contacto;
+  }
+
+  & h2 {
+    @include h2;
+  }
+
+  form {
+    @include formulario;
+
+    input {
+      @include input-formulario;
     }
 
-    & h2 {
-        @include h2
+    input[type="submit"] {
+      @include input-submit;
+
+      &:hover {
+        @include hover;
+      }
     }
-    
-    form {
-        @include formulario;
-
-        input {
-            @include input-formulario
-        }
-
-        input[type="submit"] {
-            @include input-submit;
-
-            &:hover {
-                @include hover
-            }
-
-        }
-
-    }
-
+  }
 }

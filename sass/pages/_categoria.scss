@@ -1,4 +1,22 @@
 .categoria-mujer {
+  @include responsive-tlf {
+    &-img img {
+      display: flex;
+      width: 100%;
+    }
+
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @include responsive-tablet {
+    &-img img {
+      display: flex;
+      width: 100%;
+    }
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   @extend%categoria;
 
   &-1 {
@@ -8,10 +26,27 @@
   &-img {
     @extend%img-categoria;
   }
-
 }
 
 .categoria-hombre {
+  @include responsive-tlf {
+    &-img img {
+      display: flex;
+      width: 100%;
+    }
+
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @include responsive-tablet {
+    &-img img {
+      display: flex;
+      width: 100%;
+    }
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   @extend%categoria;
 
   &-1 {
@@ -19,15 +54,30 @@
   }
 
   &-img {
-    @extend%img-categoria
+    @extend%img-categoria;
   }
-
 }
 
 .categoria-ninos {
+  @include responsive-tlf {
+    &-img img {
+      display: flex;
+      width: 100%;
+    }
+
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @include responsive-tablet {
+    &-img img {
+      display: flex;
+      width: 100%;
+    }
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   @extend%categoria;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
 
   &-1 {
     @extend%diseno-card;

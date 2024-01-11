@@ -4,13 +4,38 @@
   grid-template-rows: 1fr;
   background-color: #d3d3d3;
   place-items: center;
+
+  @include responsive-tlf {
+    div video {
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  @include responsive-tablet {
+    div video {
+      display: flex;
+      width: 100%;
+    }
+  }
 }
 
 /*LO MAS VENDIDO*/
 
 .lo-mas-vendido {
+  @include responsive-tlf {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @include responsive-tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*@include responsive-desktop {
+    grid-template-columns: repeat(4, 1fr);
+  }*/
+
   @extend%categoria;
-  grid-template-rows: repeat(2, 1fr);
 
   &-1 {
     @extend%diseno-card;
@@ -20,8 +45,11 @@
 .img-promo {
   display: flex;
   position: relative;
-  width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  & img {
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 
   p {
     position: absolute;
@@ -32,20 +60,38 @@
     background-color: rgba(255, 255, 255, 0.623);
     padding: 5px;
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 600;
+    margin: 0;
+  }
 
+  @include responsive-tlf {
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  @include responsive-tablet {
+    p {
+      font-size: 2rem;
+    }
   }
 }
 
 /*LO MAS RECOMENDADO PARA TI */
 
 .lo-mas-recomendado {
+  @include responsive-tlf {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @include responsive-tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   @extend%categoria;
-  grid-template-rows: repeat(2, 1fr);
 
   &-1 {
     @extend%diseno-card;
-
   }
 }

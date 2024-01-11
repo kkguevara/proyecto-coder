@@ -1,9 +1,16 @@
 .mi-tienda {
+  @include responsive-tlf {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @include responsive-tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   @extend %categoria;
-  grid-template-rows: repeat(7, 1fr);
 
   &-1 {
-    @extend%diseno-card
+    @extend%diseno-card;
   }
 
   &-filtro {

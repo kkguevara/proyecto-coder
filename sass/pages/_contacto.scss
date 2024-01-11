@@ -1,42 +1,69 @@
 .contacto {
-    @include grid(repeat(2, 1fr), 30px 30px, center);
-    padding: 24px;
+  @include responsive-tlf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    & article {
-        @include margin-registro-contacto;
+    div iframe {
+      width: 100%;
     }
 
-    & h2 {
-        @include h2
+    article form {
+      width: 100%;
+    }
+  }
+
+  @include responsive-tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @include grid(repeat(2, 1fr), 30px 30px, center);
+  padding: 24px;
+
+  & article {
+    @include margin-registro-contacto;
+  }
+
+  & h2 {
+    @include h2;
+  }
+
+  & p {
+    font-size: 1rem;
+    color: #000000;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  iframe {
+    width: 500px;
+    height: 400px;
+  }
+
+  form {
+    @include formulario;
+
+    input {
+      @include input-formulario;
     }
 
-    & p {
-        font-size: 1rem;
-        color: #000000;
-        text-align: center;
-        font-weight: 500;
+    textarea {
+      @include input-formulario;
     }
 
-    form {
-        @include formulario;
+    input[type="submit"] {
+      @include input-submit;
 
-        input {
-            @include input-formulario
-        }
-
-        textarea {
-            @include input-formulario;
-        }
-
-        input[type="submit"] {
-            @include input-submit;
-
-            &:hover {
-                @include hover
-            }
-
-        }
-
+      &:hover {
+        @include hover;
+      }
     }
-
+  }
 }
+
+// @include responsive-tlf{
+//     display: flex;
+//     flex-direction: column;
+//   }
