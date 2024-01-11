@@ -1,17 +1,15 @@
-@import"./base";
+@import "./base";
 
 //componentes
 
-@import"./components/header";
-@import"./components/footer";
-@import"./components/descuento";
-
-
+@import "./components/header";
+@import "./components/footer";
+@import "./components/descuento";
 
 //carpeta pages
 
-@import"./pages/index";
-@import"./pages/tienda";
-@import"./pages/registro";
-@import"./pages/contacto";
-@import"./pages/categoria";
+@import "./pages/index";
+@import "./pages/tienda";
+@import "./pages/registro";
+@import "./pages/contacto";
+@import "./pages/categoria";
