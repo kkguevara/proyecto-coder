@@ -5,7 +5,9 @@
       width: 100%;
     }
 
-    grid-template-columns: repeat(1, 1fr);
+    &-1 img {
+      width: 100%;
+    }
   }
 
   @include responsive-tablet {
@@ -14,7 +16,20 @@
       width: 100%;
     }
 
-    grid-template-columns: repeat(2, 1fr);
+    &-1 img {
+      width: 100%;
+    }
+  }
+
+  @include responsive-desktop {
+    &-img img {
+      display: flex;
+      width: 100%;
+    }
+
+    &-1 img {
+      width: 100%;
+    }
   }
 
   @extend%categoria;
@@ -35,7 +50,9 @@
       width: 100%;
     }
 
-    grid-template-columns: repeat(1, 1fr);
+    &-1 img {
+      width: 100%;
+    }
   }
 
   @include responsive-tablet {
@@ -44,7 +61,20 @@
       width: 100%;
     }
 
-    grid-template-columns: repeat(2, 1fr);
+    &-1 img {
+      width: 100%;
+    }
+  }
+
+  @include responsive-desktop {
+    &-img img {
+      display: flex;
+      width: 100%;
+    }
+
+    &-1 img {
+      width: 100%;
+    }
   }
 
   @extend%categoria;
@@ -65,7 +95,9 @@
       width: 100%;
     }
 
-    grid-template-columns: repeat(1, 1fr);
+    &-1 img {
+      width: 100%;
+    }
   }
 
   @include responsive-tablet {
@@ -74,7 +106,20 @@
       width: 100%;
     }
 
-    grid-template-columns: repeat(2, 1fr);
+    &-1 img {
+      width: 100%;
+    }
+  }
+
+  @include responsive-desktop {
+    &-img img {
+      display: flex;
+      width: 100%;
+    }
+
+    &-1 img {
+      width: 100%;
+    }
   }
 
   @extend%categoria;

@@ -1,10 +1,20 @@
 .mi-tienda {
   @include responsive-tlf {
-    grid-template-columns: repeat(1, 1fr);
+    img {
+      width: 100%;
+    }
   }
 
   @include responsive-tablet {
-    grid-template-columns: repeat(2, 1fr);
+    img {
+      width: 100%;
+    }
+  }
+
+  @include responsive-desktop {
+    img {
+      width: 100%;
+    }
   }
 
   @extend %categoria;

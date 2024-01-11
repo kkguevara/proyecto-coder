@@ -18,22 +18,35 @@
       width: 100%;
     }
   }
+
+  @include responsive-desktop {
+    div video {
+      display: flex;
+      width: 100%;
+    }
+  }
 }
 
 /*LO MAS VENDIDO*/
 
 .lo-mas-vendido {
   @include responsive-tlf {
-    grid-template-columns: repeat(1, 1fr);
+    img {
+      width: 100%;
+    }
   }
 
   @include responsive-tablet {
-    grid-template-columns: repeat(2, 1fr);
+    img {
+      width: 100%;
+    }
   }
 
-  /*@include responsive-desktop {
-    grid-template-columns: repeat(4, 1fr);
-  }*/
+  @include responsive-desktop {
+    img {
+      width: 100%;
+    }
+  }
 
   @extend%categoria;
 
@@ -82,11 +95,21 @@
 
 .lo-mas-recomendado {
   @include responsive-tlf {
-    grid-template-columns: repeat(1, 1fr);
+    img {
+      width: 100%;
+    }
   }
 
   @include responsive-tablet {
-    grid-template-columns: repeat(2, 1fr);
+    img {
+      width: 100%;
+    }
+  }
+
+  @include responsive-desktop {
+    img {
+      width: 100%;
+    }
   }
 
   @extend%categoria;
