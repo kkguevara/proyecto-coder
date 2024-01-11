@@ -17,13 +17,13 @@ $espacio-foto: 24px; //padding fotos
 }
 
 @mixin responsive-tablet {
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1023px) {
     @content;
   }
 }
 
 @mixin responsive-desktop {
-  @media (min-width: 1200px) {
+  @media (min-width: 1024px) and (max-width: 1200px) {
     @content;
   }
 }
@@ -112,8 +112,8 @@ $espacio-foto: 24px; //padding fotos
 
 %categoria {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  //grid-template-rows: repeat(2, 1fr);
   column-gap: 20px;
   row-gap: 20px;
   padding: $espacio-foto;
