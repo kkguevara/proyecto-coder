@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name=" description"
+      content=" Tus Converse favoritas están aqui,Tenemos a la venta una gran variedad de modelos de zapatillas de la marca mas reconocia por todos"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
@@ -13,8 +18,11 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <title>All Star</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <title>
+      Converse All Star | Venta exclusiva de Zapatillas Converse | contactanos
+      en nuestras redes sociales o en nuestra tienda física en Santiago
+    </title>
   </head>
 
   <body>
@@ -98,7 +106,7 @@
     <main>
       <section class="contacto">
         <article>
-          <h2>CONTACTO</h2>
+          <h2>Contacto</h2>
           <div>
             <form action>
               <label for="nombre"></label>
@@ -139,15 +147,12 @@
         </article>
         <article>
           <div>
-            <h2>UBICANOS</h2>
+            <h2>Ubicanos</h2>
             <p>En Vergara 585, Santiago Centro - Santiago de Chile</p>
           </div>
           <div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.807276070825!2d-70.66411052430892!3d-33.454327273388074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5043be98709%3A0xc8fe3b26bc9cb4bd!2sVergara%20585%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1701095781903!5m2!1ses-419!2scl"
-              width="400"
-              height="300"
-              style="border: 0"
               allowfullscreen
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
@@ -157,7 +162,7 @@
       </section>
       <section>
         <article class="obtener-descuento">
-          <div>
+          <div data-aos="zoom-in">
             <h2>OBTÉN UN DESCUENTO</h2>
             <p>
               Suscríbete a nuestro boletín informativo para obtener el cupón de
@@ -167,8 +172,13 @@
           </div>
           <div>
             <form action>
-              <label for="email2">Email:</label>
-              <input type="text" id="email2" name="email2" required />
+              <input
+                type="text"
+                id="email2"
+                name="email2"
+                placeholder="Email"
+                required
+              />
               <label for="Suscribirse"></label>
               <input type="submit" value="Suscribirse" />
             </form>
@@ -234,5 +244,9 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
