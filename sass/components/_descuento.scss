@@ -1,31 +1,35 @@
 .obtener-descuento {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    place-items: center;
-    padding: 30px;
-    background-color: rgb(161, 194, 233);
-    
-    h2 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.205);
-    }
-    
-    input {
-      width: 53%;
-      padding: 5px;
-      font-size: $t-fuente;
-    }
-  
-    input[type="submit"] {
-      @include input-submit;
-      color: $color-texto2;
-  
-      &:hover {
-        background-color: #000000;
-      }
-    }
-    
+  @include responsive-tlf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  place-items: center;
+  padding: 30px;
+  background-color: rgb(161, 194, 233);
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.205);
+  }
+
+  input {
+    width: 53%;
+    padding: 5px;
+    font-size: $t-fuente;
+  }
+
+  input[type="submit"] {
+    @include input-submit;
+    color: $color-texto2;
+
+    &:hover {
+      background-color: #000000;
+    }
+  }
+}

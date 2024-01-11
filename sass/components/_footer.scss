@@ -1,28 +1,33 @@
 footer {
-  @include flex(row,space-around,center);
-    background-color: $primary-color;
-    color: $color-texto2;
+  @include responsive-tlf {
     padding: 2rem;
-  
-    img {
-      @include img-logo;
-      
-    }
-  
-    h4 {
-      display: flex;
-      justify-content: center;
-      font-size: $t-fuente;
-    }
-  
-    a {
-      color: $color-texto2;
-      font-size: $t-fuente;
-      padding: 0.2rem;
-  
-      &:hover {
-        background-color: rgb(58, 130, 212);
-      }
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px 30px;
+  }
+
+  background-color: $primary-color;
+  color: $color-texto2;
+  padding: 3rem;
+  @include flex(row, space-around, center);
+
+  img {
+    @include img-logo;
+  }
+
+  h4 {
+    display: flex;
+    justify-content: center;
+    font-size: $t-fuente;
+  }
+
+  a {
+    color: $color-texto2;
+    font-size: $t-fuente;
+    padding: 0.2rem;
+
+    &:hover {
+      background-color: rgb(58, 130, 212);
     }
   }
-  
+}
