@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name=" description"
-      content=" Tus Converse favoritas están aqui,Tenemos a la venta una gran variedad de modelos de zapatillas de la marca mas reconocia por todos"
+      content=" Tus Converse favoritas están aqui, tenemos a la venta una gran variedad de modelos de zapatillas de la marca mas reconocida por todos"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
@@ -19,14 +19,15 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <title>Converse All Star | Venta exclusiva de Zapatillas Converse</title>
+    <title>Converse All Star | Venta exclusiva de zapatillas Converse</title>
   </head>
+
   <body>
     <header>
       <nav class="navbar navbar-expand-lg text-white">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="../imagen/logo.jpeg" alt="" />
+            <img src="imagen/logo.jpeg" alt="logo de la empresa" />
           </a>
           <button
             class="navbar-toggler bg-white"
@@ -114,131 +115,175 @@
           </div>
         </article>
       </section>
-      <br />
       <section>
-        <h2>Lo más vendidos</h2>
-        <br />
-        <article class="lo-mas-vendido">
-          <div class="lo-mas-vendido-1">
-            <img
-              src="./imagen/mas-vendida/mas vendida 1.webp"
-              alt="converse mas vendida.webp"
-            />
-            <h5>CONVERSE</h5>
-            <p>Zapatilla Chuck Taylor All Star</p>
-            <p>$55.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+        <h2>Lo más vendido</h2>
+        <div
+          id="carouselMasVendido"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="cards-wrapper">
+                <div class="card">
+                  <img
+                    src="./imagen/mas-vendida/mas vendida 1.webp"
+                    class="card-img-top"
+                    alt="Zapatilla Chuck Taylor All Star"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">CONVERSE</h5>
+                    <p class="card-text">Zapatilla Chuck Taylor All Star</p>
+                    <p>$55.990</p>
+                    <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block">
+                  <img
+                    src="./imagen/mas-vendida/mas vendida 2.webp"
+                    class="card-img-top"
+                    alt="Zapatilla Run Star Corte Bajo"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">CONVERSE</h5>
+                    <p class="card-text">Zapatilla Run Star Corte Bajo</p>
+                    <p>$59.990</p>
+                    <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block">
+                  <img
+                    src="./imagen/mas-vendida/mas vendida 3.webp"
+                    class="card-img-top"
+                    alt="Zapatilla Chuck Taylor All Star Cuero"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">CONVERSE</h5>
+                    <p class="card-text">
+                      Zapatilla Chuck Taylor All Star Cuero
+                    </p>
+                    <p>$70.990</p>
+                    <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <div class="card">
+                  <img
+                    src="./imagen/mas-vendida/mas vendida 4.webp"
+                    class="card-img-top"
+                    alt="Zapatilla Chuck Taylor All Star"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">CONVERSE</h5>
+                    <p class="card-text">Zapatilla Chuck Taylor All Star</p>
+                    <p>$60.990</p>
+                    <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block">
+                  <img
+                    src="./imagen/mas-vendida/mas vendida 5.webp"
+                    class="card-img-top"
+                    alt="Zapatilla Urbana"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">CONVERSE</h5>
+                    <p class="card-text">Zapatilla Urbana</p>
+                    <p>$39.990</p>
+                    <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block">
+                  <img
+                    src="./imagen/mas-vendida/mas vendida 6.webp"
+                    class="card-img-top"
+                    alt="Zapatilla Urbana Multicolor"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">CONVERSE</h5>
+                    <p class="card-text">Zapatilla Urbana Multicolor</p>
+                    <p>$39.990</p>
+                    <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <div class="card">
+                  <img
+                    src="./imagen/mas-vendida/mas vendida 7.webp"
+                    class="card-img-top"
+                    alt="Zapatilla Tobin Negro"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">CONVERSE</h5>
+                    <p class="card-text">Zapatilla Tobin Negro</p>
+                    <p>$43.990</p>
+                    <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block">
+                  <img
+                    src="./imagen/mas-vendida/mas vendida 8.webp"
+                    class="card-img-top"
+                    alt="Zapatilla Sport Style Ls"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">CONVERSE</h5>
+                    <p class="card-text">Zapatilla Sport Style Ls</p>
+                    <p>$54.990</p>
+                    <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block">
+                  <img
+                    src="./imagen/mas-vendida/mas vendida 9.webp"
+                    class="card-img-top"
+                    alt="Zapatilla Urbana para Niño Pro Blazer Rojas"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">CONVERSE</h5>
+                    <p class="card-text">
+                      Zapatilla Urbana para Niño Pro Blazer Rojas
+                    </p>
+                    <p>$35.990</p>
+                    <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="lo-mas-vendido-1">
-            <img
-              src="./imagen/mas-vendida/mas vendida 2.webp"
-              alt="converse mas vendida.webp"
-            />
-            <h5>CONVERSE</h5>
-            <p>Zapatilla Run Star Corte Bajo</p>
-            <p>$59.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
-          </div>
-          <div class="lo-mas-vendido-1">
-            <img
-              src="./imagen/mas-vendida/mas vendida 3.webp"
-              alt="converse mas vendida.webp"
-            />
-            <h5>CONVERSE</h5>
-            <p>Zapatilla Chuck Taylor All Star Cuero</p>
-            <p>$70.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
-          </div>
-          <div class="lo-mas-vendido-1">
-            <img
-              src="./imagen/mas-vendida/mas vendida 4.webp"
-              alt="converse mas vendida.webp"
-            />
-            <h5>CONVERSE</h5>
-            <p>Zapatilla Chuck Taylor All Star</p>
-            <p>$60.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
-          </div>
-          <div class="lo-mas-vendido-1">
-            <img
-              src="./imagen/mas-vendida/mas vendida 5.webp"
-              alt="converse mas vendida.webp"
-            />
-            <h5>CONVERSE</h5>
-            <p>Zapatilla Urbana</p>
-            <p>$39.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
-          </div>
-          <div class="lo-mas-vendido-1">
-            <img
-              src="./imagen/mas-vendida/mas vendida 6.webp"
-              alt="converse mas vendida.webp"
-            />
-            <h5>CONVERSE</h5>
-            <p>Zapatilla Urbana Multicolor</p>
-            <p>$39.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
-          </div>
-          <div class="lo-mas-vendido-1">
-            <img
-              src="./imagen/mas-vendida/mas vendida 7.webp"
-              alt="converse mas vendida.webp"
-            />
-            <h5>CONVERSE</h5>
-            <p>Zapatilla Tobin Negro</p>
-            <p>$43.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
-          </div>
-          <div class="lo-mas-vendido-1">
-            <img
-              src="./imagen/mas-vendida/mas vendida 8.webp"
-              alt="converse mas vendida.webp"
-            />
-            <h5>CONVERSE</h5>
-            <p>Zapatilla Sport Style Ls</p>
-            <p>$54.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
-          </div>
-          <div class="lo-mas-vendido-1">
-            <img
-              src="./imagen/mas-vendida/mas vendida 9.webp"
-              alt="converse mas vendida.webp"
-            />
-            <h5>CONVERSE</h5>
-            <p>Zapatilla Urbana para Niño Pro Blazer Rojas</p>
-            <p>$35.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
-          </div>
-          <div class="lo-mas-vendido-1">
-            <img
-              src="./imagen/mas-vendida/mas vendida 10.webp"
-              alt="converse mas vendida.webp"
-            />
-            <p>
-              Zapatilla para Niña Chuck Taylor All Star Animal Print Corte Bajo
-            </p>
-            <p>$33.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
-          </div>
-        </article>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselMasVendido"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselMasVendido"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
       </section>
-      <section>
-        <article>
-          <div class="img-promo">
-            <img src="/imagen/imagen promo.jpg" alt="imagen converse promo" />
-            <p>PROMO DEL 10% EN COMPRAS EN LA NUEVA COLECCIÓN</p>
-          </div>
-        </article>
-      </section>
-      <br />
       <section>
         <h2>Lo más recomendado para ti</h2>
-        <br />
         <article class="lo-mas-recomendado">
           <div class="lo-mas-recomendado-1">
             <img
               src="./imagen/mas-recomendadas/recomendada 1.webp"
-              alt="converse mas recomendada.webp"
+              alt="Zapatilla Juvenil Chuck Taylor"
             />
             <h5>CONVERSE</h5>
             <p>Zapatilla Juvenil Chuck Taylor</p>
@@ -248,7 +293,7 @@
           <div class="lo-mas-recomendado-1">
             <img
               src="./imagen/mas-recomendadas/recomendada 2.webp"
-              alt="converse mas recomendada.webp"
+              alt="Zapatilla Urbana Sport Para Niño"
             />
             <h5>CONVERSE</h5>
             <p>Zapatilla Urbana Sport Para Niño</p>
@@ -258,7 +303,7 @@
           <div class="lo-mas-recomendado-1">
             <img
               src="./imagen/mas-recomendadas/recomendada 3.webp"
-              alt="converse mas recomendada.webp"
+              alt="Zapatilla Chuck Taylor All Star Cuero"
             />
             <h5>CONVERSE</h5>
             <p>Zapatilla Chuck Taylor All Star Cuero</p>
@@ -268,7 +313,7 @@
           <div class="lo-mas-recomendado-1">
             <img
               src="./imagen/mas-recomendadas/recomendada 4.webp"
-              alt="converse mas recomendada.webp"
+              alt="Zapatilla Chuck Taylor All Star"
             />
             <h5>CONVERSE</h5>
             <p>Zapatilla Chuck Taylor All Star</p>
@@ -278,7 +323,7 @@
           <div class="lo-mas-recomendado-1">
             <img
               src="./imagen/mas-recomendadas/recomendada 5.webp"
-              alt="converse mas recomendada.webp"
+              alt="Zapatilla Tobin Blanco"
             />
             <h5>CONVERSE</h5>
             <p>Zapatilla Tobin Blanco</p>
@@ -288,7 +333,7 @@
           <div class="lo-mas-recomendado-1">
             <img
               src="./imagen/mas-recomendadas/recomendada 6.webp"
-              alt="converse mas recomendada.webp"
+              alt="Zapatilla Urbana Para Niño Pro Blazer Negras"
             />
             <h5>CONVERSE</h5>
             <p>Zapatilla Urbana Para Niño Pro Blazer Negras</p>
@@ -298,7 +343,7 @@
           <div class="lo-mas-recomendado-1">
             <img
               src="./imagen/mas-recomendadas/recomendada 7.webp"
-              alt="converse mas recomendada.webp"
+              alt="Zapatilla Chuck Taylor All Star"
             />
             <h5>CONVERSE</h5>
             <p>Zapatilla Chuck Taylor All Star</p>
@@ -308,7 +353,7 @@
           <div class="lo-mas-recomendado-1">
             <img
               src="./imagen/mas-recomendadas/recomendada 8.webp"
-              alt="converse mas recomendada.webp"
+              alt="Zapatilla Run Star"
             />
             <h5>CONVERSE</h5>
             <p>Zapatilla Run Star</p>
@@ -318,7 +363,7 @@
           <div class="lo-mas-recomendado-1">
             <img
               src="./imagen/mas-recomendadas/recomendada 9.webp"
-              alt="converse mas recomendada.webp"
+              alt="Zapatilla Chuck Taylor All Star"
             />
             <h5>CONVERSE</h5>
             <p>Zapatilla Chuck Taylor All Star</p>
@@ -328,7 +373,7 @@
           <div class="lo-mas-recomendado-1">
             <img
               src="./imagen/mas-recomendadas/recomendada 10.webp"
-              alt="converse mas recomendada.webp"
+              alt="Zapatilla Chuck 70 Plus"
             />
             <h5>CONVERSE</h5>
             <p>Zapatilla Chuck 70 Plus</p>
@@ -365,22 +410,21 @@
     </main>
     <footer>
       <div class="footer-logo">
-        <img src="../imagen/logo.jpeg" alt="logo" />
+        <img src="imagen/logo.jpeg" alt="logo de la empresa" />
       </div>
       <div>
         <nav>
           <ul>
             <li><a href="#">INICIO</a></li>
-            <li><a href="./pages/tienda.html">TIENDA</a></li>
-            <li><a href="./pages/categoria.html">CATEGORÍA</a></li>
-            <li><a href="./pages/registro.html">REGISTRO</a></li>
-            <li><a href="./pages/contacto.html">CONTACTO</a></li>
+            <li><a href="pages/tienda.html">TIENDA</a></li>
+            <li><a href="pages/categoria.html">CATEGORÍA</a></li>
+            <li><a href="pages/registro.html">REGISTRO</a></li>
+            <li><a href="pages/contacto.html">CONTACTO</a></li>
           </ul>
         </nav>
       </div>
       <div>
         <h4>CONTACTANOS</h4>
-        <br />
         <ul>
           <li>Estamos ubicados en Vergara 585, Santiago</li>
           <li>
@@ -400,13 +444,11 @@
                 <i class="bi bi-facebook"></i
               ></a>
             </li>
-            <br />
             <li>
               <a href="https://www.linkedin.com" target="_blank">
                 <i class="bi bi-linkedin"></i
               ></a>
             </li>
-            <br />
             <li>
               <a href="https://www.instagram.com" target="_blank"
                 ><i class="bi bi-instagram"></i
@@ -421,6 +463,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
