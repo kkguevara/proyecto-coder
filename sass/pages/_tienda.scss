@@ -24,6 +24,8 @@
   }
 
   &-filtro {
+    display: flex;
+    justify-content: flex-end;
     padding: $espacio-foto;
   }
 }

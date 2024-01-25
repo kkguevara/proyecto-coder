@@ -19,6 +19,7 @@
 
   article {
     @include margin-registro-contacto;
+    padding: $espacio-foto;
   }
 
   & h2 {

@@ -23,6 +23,7 @@
 
   & article {
     @include margin-registro-contacto;
+    padding: $espacio-foto;
   }
 
   & h2 {
@@ -61,8 +62,3 @@
     }
   }
 }
-
-// @include responsive-tlf{
-//     display: flex;
-//     flex-direction: column;
-//   }
