@@ -5,23 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name=" description"
-      content=" Tus Converse favoritas están aqui,Tenemos a la venta una gran variedad de modelos de zapatillas de la marca mas reconocia por todos"
-    />
+      content=" Bienvenido a nuestra tienda de zapatillas, donde encontrarás una amplia selección de calzado Converse para todos los gustos y edades. Descubre los icónicos modelos Chuck Taylor y All Star, así como las últimas novedades en moda urbana y deportiva. Nuestro objetivo es ofrecerte la mejor experiencia de compra, con envío rápido y seguro, y un servicio al cliente excepcional." />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
-    />
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous" />
     <link rel="stylesheet" href="../styles/styles.css" />
-    <title>
-      Converse All Star | Venta exclusiva de Zapatillas Converse | Nuestra
-      tienda te ofrece diferentes modelos para ti
+    <title> Tienda exclusiva converse | Ofrece diferentes modelos
+      de la marca más reconocida en el mundo | Explora nuestra colección
+      completa de calzado
     </title>
   </head>
   <body>
@@ -29,7 +26,7 @@
       <nav class="navbar navbar-expand-lg text-white">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="../imagen/logo.jpeg" alt="" />
+            <img src="../imagen/logo.jpeg" alt="logo de la empresa" />
           </a>
           <button
             class="navbar-toggler bg-white"
@@ -38,8 +35,7 @@
             data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown"
             aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -48,41 +44,31 @@
                 <a
                   class="nav-link text-white"
                   aria-current="page"
-                  href="../index.html"
-                  >INICIO</a
-                >
+                  href="../index.html">INICIO</a>
               </li>
               <li class="nav-item m-2">
                 <a
                   class="nav-link active text-white"
                   aria-current="page"
-                  href="#"
-                  >TIENDA</a
-                >
+                  href="#">TIENDA</a>
               </li>
               <li class="nav-item m-2">
                 <a
                   class="nav-link text-white"
                   aria-current="page"
-                  href="../pages/categoria.html"
-                  >CATEGORÍA</a
-                >
+                  href="../pages/categoria.html">CATEGORÍA</a>
               </li>
               <li class="nav-item m-2">
                 <a
                   class="nav-link text-white"
                   aria-current="page"
-                  href="../pages/registro.html"
-                  >REGISTRO</a
-                >
+                  href="../pages/registro.html">REGISTRO</a>
               </li>
               <li class="nav-item m-2">
                 <a
                   class="nav-link text-white"
                   aria-current="page"
-                  href="../pages/contacto.html"
-                  >CONTACTO</a
-                >
+                  href="../pages/contacto.html">CONTACTO</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -90,8 +76,7 @@
                 class="form-control me-2"
                 type="search"
                 placeholder="Buscar..."
-                aria-label="Search"
-              />
+                aria-label="Search" />
             </form>
             <nav class="icono-img">
               <i class="bi bi-truck"></i>
@@ -104,349 +89,412 @@
     </header>
     <main>
       <section>
+        <h2>Mi Tienda Converse</h2>
         <article class="mi-tienda-filtro">
           <label for="ORDENAR POR"></label>
-          <select name="" id="ORDENAR POR">
-            <option value="">ORDENAR POR</option>
-            <option value="">Precio (de Menor a Mayor)</option>
-            <option value="">Precio (de Mayor a Menor)</option>
-            <option value="">Lo Mas Vendidos</option>
+          <select name id="ORDENAR POR">
+            <option value>ORDENAR POR</option>
+            <option value>Precio (de Menor a Mayor)</option>
+            <option value>Precio (de Mayor a Menor)</option>
+            <option value>Lo Mas Vendidos</option>
           </select>
           <label for="FILTRAR POR"></label>
-          <select name="" id="FILTRAR POR">
-            <option value="">FILTRAR POR</option>
-            <option value="">Talla</option>
-            <option value="">Mujer</option>
-            <option value="">Hombre</option>
-            <option value="">Niños</option>
-            <option value="">Descuento</option>
+          <select name id="FILTRAR POR">
+            <option value>FILTRAR POR</option>
+            <option value>Talla</option>
+            <option value>Mujer</option>
+            <option value>Hombre</option>
+            <option value>Niños</option>
+            <option value>Descuento</option>
           </select>
         </article>
         <article class="mi-tienda">
           <div class="mi-tienda-1">
-            <img src="../imagen/mi-tienda/mi-tienda 1.webp" alt="mi-tienda 1" />
+            <img
+              src="../imagen/mi-tienda/mi-tienda 1.webp"
+              class="card-img-top"
+              alt="Zapatilla Chuck Taylor Classic para hombre" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Chuck Taylor Classic</p>
             <p>$42.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
-            <img src="../imagen/mi-tienda/mi-tienda 2.webp" alt="mi-tienda 2" />
+            <img
+              src="../imagen/mi-tienda/mi-tienda 2.webp"
+              class="card-img-top"
+              alt="Zapatilla Urbana Multicolor para hombre" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Urbana Multicolor</p>
             <p>$39.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
-            <img src="../imagen/mi-tienda/mi-tienda 3.webp" alt="mi-tienda 3" />
+            <img
+              src="../imagen/mi-tienda/mi-tienda 3.webp"
+              class="card-img-top"
+              alt="Zapatilla Chuck 70 Plus para mujer" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Chuck 70 Plus</p>
             <p>$55.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
-            <img src="../imagen/mi-tienda/mi-tienda 4.webp" alt="mi-tienda 4" />
+            <img
+              src="../imagen/mi-tienda/mi-tienda 4.webp"
+              class="card-img-top"
+              alt="Zapatilla Chuck Taylor All Star para mujer" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Chuck Taylor All Star</p>
             <p>$37.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
-            <img src="../imagen/mi-tienda/mi-tienda 5.webp" alt="mi-tienda 5" />
+            <img
+              src="../imagen/mi-tienda/mi-tienda 5.webp"
+              class="card-img-top"
+              alt="Zapatilla Chuck Taylor All Star para mujer" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Chuck Taylor All Star</p>
             <p>$37.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
-            <img src="../imagen/mi-tienda/mi-tienda 6.webp" alt="mi-tienda 6" />
+            <img
+              src="../imagen/mi-tienda/mi-tienda 6.webp"
+              class="card-img-top"
+              alt="Zapatilla Run Star para mujer" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Run Star</p>
             <p>$66.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
-            <img src="../imagen/mi-tienda/mi-tienda 7.webp" alt="mi-tienda 7" />
+            <img
+              src="../imagen/mi-tienda/mi-tienda 7.webp"
+              class="card-img-top"
+              alt="Zapatilla Chuck Taylor All Star para mujer" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Chuck Taylor All Star</p>
             <p>$55.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
-            <img src="../imagen/mi-tienda/mi-tienda 8.webp" alt="mi-tienda 8" />
+            <img
+              src="../imagen/mi-tienda/mi-tienda 8.webp"
+              class="card-img-top"
+              alt="apatilla Run Star Corte Bajo para mujer" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Run Star Corte Bajo</p>
             <p>$59.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
-            <img src="../imagen/mi-tienda/mi-tienda 9.webp" alt="mi-tienda 9" />
+            <img
+              src="../imagen/mi-tienda/mi-tienda 9.webp"
+              class="card-img-top"
+              alt="Zapatilla Chuck Taylor All Star Cuero para mujer" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Chuck Taylor All Star Cuero</p>
             <p>$70.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 10.webp"
-              alt="mi-tienda 10"
-            />
+              class="card-img-top"
+              alt="Zapatilla Run Star Corte Bajo para mujer" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Run Star Corte Bajo</p>
             <p>$59.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 11.webp"
-              alt="mi-tienda 11"
-            />
+              class="card-img-top"
+              alt="Zapatilla Chuck Taylor All Star para mujer" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Chuck Taylor All Star</p>
             <p>$37.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 12.webp"
-              alt="mi-tienda 12"
-            />
+              class="card-img-top"
+              alt="Zapatilla Chuck Taylor Classic de Cuero" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Chuck Taylor Classic de Cuero</p>
             <p>$52.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 13.webp"
-              alt="mi-tienda 13"
-            />
+              class="card-img-top"
+              alt="Zapatilla Chuck Taylor All Star Animal Print" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Chuck Taylor All Star Animal Print</p>
             <p>$45.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 14.webp"
-              alt="mi-tienda 14"
-            />
+              class="card-img-top"
+              alt="Zapatilla Chuck Taylor All Star" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Chuck Taylor All Star</p>
             <p>$44.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 15.webp"
-              alt="mi-tienda 15"
-            />
+              class="card-img-top"
+              alt="Zapatilla Chuck Taylor All Star Animal Print" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Chuck Taylor All Star Animal Print</p>
             <p>$45.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 16.webp"
-              alt="mi-tienda 16"
-            />
+              class="card-img-top"
+              alt="Zapatilla para Niña Chuck Taylor All Star Animal Print" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla para Niña Chuck Taylor All Star Animal Print</p>
             <p>$35.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 17.webp"
-              alt="mi-tienda 17"
-            />
+              class="card-img-top"
+              alt="Zapatilla para Niña Chuck Taylor All Star Animal Print Corte Bajo" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>
               Zapatilla para Niña Chuck Taylor All Star Animal Print Corte Bajo
             </p>
             <p>$33.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 18.webp"
-              alt="mi-tienda 18"
-            />
+              class="card-img-top"
+              alt="Zapatilla para Niño Chuck Taylor All Star" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla para Niño Chuck Taylor All Star</p>
             <p>$35.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 19.webp"
-              alt="mi-tienda 19"
-            />
+              class="card-img-top"
+              alt="Zapatilla para Niño Chuck Taylor All Star Corte Bajo" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla para Niño Chuck Taylor All Star Corte Bajo</p>
             <p>$32.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 20.webp"
-              alt="mi-tienda 20"
-            />
+              class="card-img-top"
+              alt="Zapatilla para Niño Chuck Taylor Classic" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla para Niño Chuck Taylor Classic</p>
             <p>$37.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 21.webp"
-              alt="mi-tienda 21"
-            />
+              class="card-img-top"
+              alt="Zapatilla Urbana para Niño Pro Blazer Rojas" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Urbana para Niño Pro Blazer Rojas</p>
             <p>$35.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 22.webp"
-              alt="mi-tienda 22"
-            />
+              class="card-img-top"
+              alt="Zapatilla Para Niño Chuck Taylor" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Para Niño Chuck Taylor</p>
             <p>$37.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 23.webp"
-              alt="mi-tienda 23"
-            />
+              class="card-img-top"
+              alt="Zapatilla Juvenil Chuck Taylor" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Juvenil Chuck Taylor</p>
             <p>$35.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 24.webp"
-              alt="mi-tienda 24"
-            />
+              class="card-img-top"
+              alt="Zapatilla Urbana Para Niño Pro Blazer Negras" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Urbana Para Niño Pro Blazer Negras</p>
             <p>$35.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mas-recomendadas/recomendada 2.webp"
-              alt="converse mas recomendada.webp"
-            />
+              class="card-img-top"
+              alt="Zapatilla Urbana Sport Para Niño" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Urbana Sport Para Niño</p>
             <p>$38.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 26.webp"
-              alt="mi-tienda 26"
-            />
+              class="card-img-top"
+              alt="Zapatilla Sport Style Ls" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Sport Style Ls</p>
             <p>$54.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 27.webp"
-              alt="mi-tienda 26"
-            />
+              class="card-img-top"
+              alt="Zapatilla Tobin Blanco" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Tobin Blanco</p>
             <p>$43.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 28.webp"
-              alt="mi-tienda 26"
-            />
+              class="card-img-top"
+              alt="Zapatilla Chuck Taylor All Star" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Chuck Taylor All Star</p>
             <p>$44.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 29.webp"
-              alt="mi-tienda 29"
-            />
+              class="card-img-top"
+              alt="Zapatilla Tobin Negro" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Tobin Negro</p>
             <p>$43.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 30.webp"
-              alt="mi-tienda 30"
-            />
+              class="card-img-top"
+              alt="Zapatilla Sport Style Ls" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Sport Style Ls</p>
             <p>$54.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 31.webp"
-              alt="mi-tienda 31"
-            />
+              class="card-img-top"
+              alt="Zapatilla Chuck Taylor All Star" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Chuck Taylor All Star</p>
             <p>$40.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 32.webp"
-              alt="mi-tienda 32"
-            />
+              class="card-img-top"
+              alt="Zapatilla Chuck Taylor All Star" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Chuck Taylor All Star</p>
             <p>$47.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 33.webp"
-              alt="mi-tienda 33"
-            />
+              class="card-img-top"
+              alt="Zapatilla Chuck Taylor All Star" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Chuck Taylor All Star</p>
             <p>$60.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 34.webp"
-              alt="mi-tienda 34"
-            />
+              class="card-img-top"
+              alt="Zapatilla Urbana" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Urbana</p>
             <p>$39.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
           <div class="mi-tienda-1">
             <img
               src="../imagen/mi-tienda/mi-tienda 35.webp"
-              alt="mi-tienda 35"
-            />
+              class="card-img-top"
+              alt="Zapatilla Chuck Taylor All Star Corte Bajo" />
+            <div class="card-body"></div>
             <h5>CONVERSE</h5>
             <p>Zapatilla Chuck Taylor All Star Corte Bajo</p>
             <p>$44.990</p>
-            <input type="submit" value="AGREGAR AL CARRITO" />
+            <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
           </div>
         </article>
       </section>
@@ -461,14 +509,13 @@
             </p>
           </div>
           <div>
-            <form action="">
+            <form action>
               <input
                 type="text"
                 id="email2"
                 name="email2"
                 placeholder="Email"
-                required
-              />
+                required />
               <label for="Suscribirse"></label>
               <input type="submit" value="Suscribirse" />
             </form>
@@ -478,7 +525,7 @@
     </main>
     <footer>
       <div class="footer-logo">
-        <img src="../imagen/logo.jpeg" alt="logo" />
+        <img src="../imagen/logo.jpeg" alt="logo de la empresa" />
       </div>
       <div>
         <nav>
@@ -492,15 +539,14 @@
         </nav>
       </div>
       <div>
-        <h4>CONTACTANOS</h4>
-        <br />
+        <h4>CONTÁCTANOS</h4>
         <ul>
           <li>Estamos ubicados en Vergara 585, Santiago</li>
           <li>
             Horario de atención en nuestra tienda física: 9:00 a 19:00 hrs de
-            Lunes a sábado .
+            Lunes a Sábado.
           </li>
-          <li>teléfono : (+56)2291398763</li>
+          <li>Teléfono : (+56)2291398763</li>
           <li>allstar@gmail.com</li>
         </ul>
       </div>
@@ -510,20 +556,15 @@
           <ul>
             <li>
               <a href="https://www.facebook.com" target="_blank">
-                <i class="bi bi-facebook"></i
-              ></a>
+                <i class="bi bi-facebook"></i></a>
             </li>
-            <br />
             <li>
               <a href="https://www.linkedin.com" target="_blank">
-                <i class="bi bi-linkedin"></i
-              ></a>
+                <i class="bi bi-linkedin"></i></a>
             </li>
-            <br />
             <li>
-              <a href="https://www.instagram.com" target="_blank"
-                ><i class="bi bi-instagram"></i
-              ></a>
+              <a href="https://www.instagram.com" target="_blank"><i
+                  class="bi bi-instagram"></i></a>
             </li>
           </ul>
         </nav>
@@ -532,8 +573,7 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
