@@ -22,11 +22,12 @@
 }
 
 .categoria-ninos-1, .categoria-hombre-1, .categoria-mujer-1, .mi-tienda-1, .lo-mas-recomendado-1, .lo-mas-vendido-1 {
-  border: 1px solid rgba(0, 0, 0, 0.175);
+  border: 6px solid rgba(0, 0, 0, 0.175);
   background-color: rgba(192, 192, 192, 0.3137254902);
   background-position: center;
   background-size: cover;
   justify-content: space-evenly;
+  border-radius: 10px;
 }
 
 .categoria-ninos-img, .categoria-hombre-img, .categoria-mujer-img {
@@ -302,6 +303,8 @@ footer a:hover {
   }
 }
 .mi-tienda-filtro {
+  display: flex;
+  justify-content: flex-end;
   padding: 24px;
 }
 
@@ -331,6 +334,7 @@ footer a:hover {
 .registro-inicio article {
   max-width: 800px;
   margin: 0 auto;
+  padding: 24px;
 }
 .registro-inicio h2 {
   margin: 20px;
@@ -393,6 +397,7 @@ footer a:hover {
 .contacto article {
   max-width: 800px;
   margin: 0 auto;
+  padding: 24px;
 }
 .contacto h2 {
   margin: 20px;
