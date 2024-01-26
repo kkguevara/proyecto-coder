@@ -12,6 +12,13 @@
 * li {
   list-style: none;
 }
+* h2 {
+  font-family: "Poppins", sans-serif;
+  padding: 24px;
+}
+* h5 {
+  font-family: "Poppins", sans-serif;
+}
 
 .categoria-ninos, .categoria-hombre, .categoria-mujer, .mi-tienda, .lo-mas-recomendado, .lo-mas-vendido {
   display: grid;
@@ -242,6 +249,7 @@ footer a:hover {
 .img-promo {
   display: flex;
   position: relative;
+  padding: 24px;
 }
 .img-promo img {
   width: 100%;
@@ -253,12 +261,13 @@ footer a:hover {
   left: 50%;
   border-radius: 10px;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.623);
+  background-color: rgba(255, 255, 255, 0.513);
   padding: 5px;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   margin: 0;
+  font-family: "Shadows Into Light", cursive;
 }
 @media (min-width: 365px) and (max-width: 425px) {
   .img-promo p {
