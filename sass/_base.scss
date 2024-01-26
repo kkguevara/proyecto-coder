@@ -2,6 +2,7 @@
 
 $primary-color: black;
 $tipografia: "Arial", sans-serif;
+$tipografia-titulo: "Poppins", sans-serif;
 $color-texto1: black;
 $color-texto2: white;
 $border: 10px;
@@ -42,6 +43,13 @@ $espacio-foto: 24px; //padding fotos
   ul,
   li {
     list-style: none;
+  }
+  h2 {
+    font-family: $tipografia-titulo;
+    padding: $espacio-foto;
+  }
+  h5 {
+    font-family: $tipografia-titulo;
   }
 }
 
