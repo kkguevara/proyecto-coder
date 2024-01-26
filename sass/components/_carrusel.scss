@@ -1,49 +1,29 @@
 .cards {
   @include flex(row, space-around, center);
   display: flex;
-}
-.cards-wrapper {
-  display: flex;
-  justify-content: center;
-}
-.card img {
-  background-position: center;
-  width: 200px;
-  height: 300px;
-  margin: 50px; /* Márgenes externos */
-  background-size: cover;
+
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+  }
 }
 .card {
-  margin: 2rem;
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-  border: none;
-  border-radius: 0;
+  @include card;
 
-  @include responsive-tablet {
-    margin: 3rem;
+  &-img {
+    background-position: center;
+    width: 200px;
+    height: 300px;
+    margin: 50px;
+    margin: 50px;
+    background-size: cover;
   }
 }
-
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: rgb(161, 194, 233);
-  width: 5vh;
-  height: 5vh;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  @include carousel;
 
-.carousel-item {
-  width: auto;
-  float: none;
-  margin-right: auto;
-
-  @include responsive-tablet {
-    float: left;
-  }
-
-  @include responsive-desktop {
-    width: 100%;
+  .carousel-item {
+    @include carousel-item;
   }
 }
