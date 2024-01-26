@@ -28,6 +28,9 @@
 
   form {
     @include formulario;
+    @include responsive-desktop {
+      width: 400px;
+    }
 
     input {
       @include input-formulario;
