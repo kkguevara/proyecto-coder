@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -82,7 +81,7 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
-@media (min-width: 365px) and (max-width: 425px) {
+@media (min-width: 350px) and (max-width: 425px) {
   footer {
     padding: 2rem;
     display: grid;
@@ -116,7 +115,7 @@ footer a:hover {
   padding: 30px;
   background-color: rgb(161, 194, 233);
 }
-@media (min-width: 365px) and (max-width: 425px) {
+@media (min-width: 350px) and (max-width: 425px) {
   .obtener-descuento {
     display: flex;
     flex-direction: column;
@@ -152,18 +151,9 @@ footer a:hover {
   align-items: center;
   display: flex;
 }
-
 .cards-wrapper {
   display: flex;
   justify-content: center;
-}
-
-.card img {
-  background-position: center;
-  width: 200px;
-  height: 300px;
-  margin: 50px; /* Márgenes externos */
-  background-size: cover;
 }
 
 .card {
@@ -172,10 +162,13 @@ footer a:hover {
   border: none;
   border-radius: 0;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .card {
-    margin: 3rem;
-  }
+.card-img {
+  background-position: center;
+  width: 200px;
+  height: 300px;
+  margin: 50px;
+  margin: 50px;
+  background-size: cover;
 }
 
 .carousel-control-prev,
@@ -187,21 +180,11 @@ footer a:hover {
   top: 50%;
   transform: translateY(-50%);
 }
-
-.carousel-item {
+.carousel-control-prev .carousel-item,
+.carousel-control-next .carousel-item {
   width: auto;
   float: none;
   margin-right: auto;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .carousel-item {
-    float: left;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1200px) {
-  .carousel-item {
-    width: 100%;
-  }
 }
 
 .video-inicio {
@@ -211,7 +194,7 @@ footer a:hover {
   background-color: #d3d3d3;
   place-items: center;
 }
-@media (min-width: 365px) and (max-width: 425px) {
+@media (min-width: 350px) and (max-width: 425px) {
   .video-inicio div video {
     display: flex;
     width: 100%;
@@ -231,7 +214,7 @@ footer a:hover {
 }
 
 /*LO MAS VENDIDO*/
-@media (min-width: 365px) and (max-width: 425px) {
+@media (min-width: 350px) and (max-width: 425px) {
   .lo-mas-vendido img {
     width: 100%;
   }
@@ -269,7 +252,7 @@ footer a:hover {
   margin: 0;
   font-family: "Shadows Into Light", cursive;
 }
-@media (min-width: 365px) and (max-width: 425px) {
+@media (min-width: 350px) and (max-width: 425px) {
   .img-promo p {
     font-size: 1rem;
   }
@@ -281,7 +264,7 @@ footer a:hover {
 }
 
 /*LO MAS RECOMENDADO PARA TI */
-@media (min-width: 365px) and (max-width: 425px) {
+@media (min-width: 350px) and (max-width: 425px) {
   .lo-mas-recomendado img {
     width: 100%;
   }
@@ -296,7 +279,7 @@ footer a:hover {
     width: 100%;
   }
 }
-@media (min-width: 365px) and (max-width: 425px) {
+@media (min-width: 350px) and (max-width: 425px) {
   .mi-tienda img {
     width: 100%;
   }
@@ -323,7 +306,7 @@ footer a:hover {
   gap: 30px 30px;
   justify-content: center;
 }
-@media (min-width: 365px) and (max-width: 425px) {
+@media (min-width: 350px) and (max-width: 425px) {
   .registro-inicio {
     display: flex;
     flex-direction: column;
@@ -356,6 +339,11 @@ footer a:hover {
   gap: 10px;
   width: 500px;
 }
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .registro-inicio form {
+    width: 400px;
+  }
+}
 .registro-inicio form input {
   width: 100%;
   padding: 5px;
@@ -383,7 +371,7 @@ footer a:hover {
   gap: 30px 30px;
   justify-content: center;
 }
-@media (min-width: 365px) and (max-width: 425px) {
+@media (min-width: 350px) and (max-width: 425px) {
   .contacto {
     display: flex;
     flex-direction: column;
@@ -421,8 +409,8 @@ footer a:hover {
   font-weight: 500;
 }
 .contacto iframe {
-  width: 500px;
-  height: 400px;
+  width: 400px;
+  height: 300px;
 }
 .contacto form {
   display: grid;
@@ -459,7 +447,7 @@ footer a:hover {
   cursor: pointer;
 }
 
-@media (min-width: 365px) and (max-width: 425px) {
+@media (min-width: 350px) and (max-width: 425px) {
   .categoria-mujer-img img {
     display: flex;
     width: 100%;
@@ -486,7 +474,7 @@ footer a:hover {
     width: 100%;
   }
 }
-@media (min-width: 365px) and (max-width: 425px) {
+@media (min-width: 350px) and (max-width: 425px) {
   .categoria-hombre-img img {
     display: flex;
     width: 100%;
@@ -513,7 +501,7 @@ footer a:hover {
     width: 100%;
   }
 }
-@media (min-width: 365px) and (max-width: 425px) {
+@media (min-width: 350px) and (max-width: 425px) {
   .categoria-ninos-img img {
     display: flex;
     width: 100%;
